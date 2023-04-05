@@ -1,9 +1,5 @@
 project(segger_rtt)
 
-
-file(GLOB PROJ_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/RTT/*.c")
-
-
 add_library(${PROJECT_NAME} STATIC 
                 ${CMAKE_CURRENT_SOURCE_DIR}/RTT/SEGGER_RTT.c
                 ${CMAKE_CURRENT_SOURCE_DIR}/RTT/SEGGER_RTT_printf.c
